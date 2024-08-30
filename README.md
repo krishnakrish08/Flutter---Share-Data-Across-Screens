@@ -1,6 +1,6 @@
 # share_data_across_screens
 
-A new Flutter project.
+This Project consists of different state management techniques. It is used to share the data across screens. I have provided similar examples with provider and inheritedmodel currently.
 
 ## Getting Started
 
