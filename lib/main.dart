@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:inherited_model_example/inherited_model_example.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_example/provider/model/provider_data_model.dart';
 import 'package:share_data_across_screens/home_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const InheritedDataProvider(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
