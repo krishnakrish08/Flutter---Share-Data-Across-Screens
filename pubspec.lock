@@ -75,6 +75,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  inherited_model_example:
+    dependency: "direct main"
+    description:
+      path: "packages/inherited_model_example"
+      relative: true
+    source: path
+    version: "0.0.1"
   leak_tracker:
     dependency: transitive
     description:
@@ -232,5 +239,5 @@ packages:
     source: hosted
     version: "14.2.5"
 sdks:
-  dart: ">=3.5.0 <4.0.0"
+  dart: ">=3.5.1 <4.0.0"
   flutter: ">=3.18.0-18.0.pre.54"
