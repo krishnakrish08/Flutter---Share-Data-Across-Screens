@@ -1,8 +1,9 @@
+import 'package:bloc_example/screens/bloc_first_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:inherited_model_example/inherited_model_example.dart';
 import 'package:inherited_model_example/screens/inherited_first_screen.dart';
-import 'package:provider/provider.dart';
 import 'package:provider_example/provider/screens/provider_first_screen.dart';
+import 'package:value_listenable_example/screens/value_first_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -45,21 +46,26 @@ class HomeScreen extends StatelessWidget {
               height: 16,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) {
+                    return const BlocFirstScreen();
+                  },
+                ));
+              },
               child: const Text("Bloc"),
             ),
             const SizedBox(
               height: 16,
             ),
             ElevatedButton(
-              onPressed: () {},
-              child: const Text("RiverPod"),
-            ),
-            const SizedBox(
-              height: 16,
-            ),
-            ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) {
+                    return const ValueFirstScreen();
+                  },
+                ));
+              },
               child: const Text("ValueListenableBuilder"),
             ),
             const SizedBox(
